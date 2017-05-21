@@ -14,7 +14,7 @@ body{
 }
 
 .header h1{
-	display:flex;
+	display:flex; /*<!--Centered Text-->*/
     align-items: center;
     justify-content: center;
     background-color: #4aaaa5;
@@ -24,15 +24,17 @@ body{
 }
 
 .footer{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 40px;
-  background-color: #666666;
-  text-align: center;
-  border-top: 5px solid #4aaaa5;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	clear:both;
+	padding: 40px;
+	background-color: #666666;
+	text-align: center;
+	border-top: 5px solid #4aaaa5;
 }
+
 
 .footer p{
 	color: white;
@@ -85,9 +87,9 @@ img#bio-image{
 
 .container{
 	margin: 35px auto;
-	width: 80%;
-	height: 100%;
-	background-color: #ffffff;
+	margin-bottom: 50px;
+    width: 80%;
+    overflow: auto;
 }
 
 #AboutMe{
@@ -96,14 +98,21 @@ img#bio-image{
 	width: 60%;
 	padding: 20px;
 	background-color: #ffffff;
+	box-sizing: border-box;
+	margin-right: 35px;
 }
 
 #SocialBox{
-	float: right;
-	width: 30%;
+	float: left;
+	width: 35%;
 	border: 1px solid #dddddd;
 	padding: 20px;
 	background-color: #ffffff;
+	box-sizing: border-box;
+}
+
+#SocialBox ul{
+	text-align: center;
 }
 
 #SocialBox li{
@@ -117,6 +126,24 @@ img#bio-image{
 }
 
 #SocialBox img:hover {
+    opacity: 0.7;
+}
+
+#PortfolioList{
+	text-align: center;
+}
+
+#PortfolioList li{
+	display: inline-block;
+	text-align: center;
+	margin: 20px; 
+}
+
+#PortfolioList img{
+	width: 250px;
+}
+
+#PortfolioList img:hover {
     opacity: 0.7;
 }
 
@@ -147,7 +174,7 @@ img#bio-image{
 	margin: 30px 0px;
 }
 
-/* Change the link color to #111 (black) on hover */
+
 .nav li a:hover {
     color: lightblue;
 }
@@ -160,4 +187,12 @@ img#bio-image{
 
 .nav a.active {
     color: #4aaaa5;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
 }
