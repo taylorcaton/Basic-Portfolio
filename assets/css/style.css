@@ -24,7 +24,7 @@ body{
 }
 
 .footer{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -87,7 +87,7 @@ img#bio-image{
 
 .container{
 	margin: 35px auto;
-	margin-bottom: 50px;
+	margin-bottom: 10%;
     width: 80%;
     overflow: auto;
 }
@@ -136,11 +136,11 @@ img#bio-image{
 #PortfolioList li{
 	display: inline-block;
 	text-align: center;
-	margin: 20px; 
+	margin: 0px; 
 }
 
 #PortfolioList img{
-	width: 250px;
+	width: 200px;
 }
 
 #PortfolioList img:hover {
