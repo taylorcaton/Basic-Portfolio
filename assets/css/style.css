@@ -17,10 +17,41 @@ body{
 	display:flex; /*<!--Centered Text-->*/
     align-items: center;
     justify-content: center;
-    background-color: #4aaaa5;
     height: 80px;
     padding: 0px 15px;
+    animation-name: animate2;
+    animation-duration: 2s;
+    background-color: #4aaaa5;
     color: white;
+}
+
+.header h1:hover{
+	animation-name: animate1;
+    animation-duration: 2s;
+    color:#4aaaa5;
+    background-color: white;
+}
+
+@keyframes animate1 {
+    from {
+    	background-color: #4aaaa5;
+		color: white;
+    }
+    to {
+    	background-color: white;
+    	color:#4aaaa5;
+    }
+}
+
+@keyframes animate2 {
+	from {
+    	background-color: white;
+    	color:#4aaaa5;
+    }
+    to {
+    	background-color: #4aaaa5;
+		color: white;
+    }
 }
 
 .footer{
