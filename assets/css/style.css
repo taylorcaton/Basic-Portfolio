@@ -4,6 +4,11 @@ body{
 	background-color: #ffffff;
 	background-image: url("../images/playstation-pattern.png");
 	background-repeat: repeat;
+	
+	/*------------Sticky Footer----------*/
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
 }
 
 .header{
@@ -14,20 +19,23 @@ body{
 }
 
 .header h1{
-	display:flex; /*<!--Centered Text-->*/
+	display:flex; /*------Centered Text------*/
     align-items: center;
     justify-content: center;
+
+
     height: 80px;
     padding: 0px 15px;
     animation-name: animate2;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     background-color: #4aaaa5;
     color: white;
+    font-variant: small-caps;
 }
 
 .header h1:hover{
 	animation-name: animate1;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     color:#4aaaa5;
     background-color: white;
 }
@@ -55,10 +63,6 @@ body{
 }
 
 .footer{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	clear:both;
 	padding: 40px;
 	background-color: #666666;
@@ -122,9 +126,11 @@ img#bio-image{
 
 .container{
 	margin: 35px auto;
-	margin-bottom: 10%;
     width: 80%;
     overflow: auto;
+	
+	/*----------Needed for Sticky Footer----------*/
+    flex: 1;
 }
 
 #AboutMe{
@@ -137,6 +143,9 @@ img#bio-image{
 	margin-right: 35px;
 }
 
+
+
+/*----------------------CONNECT BOX--------------------*/
 #SocialBox{
 	float: left;
 	width: 35%;
@@ -164,6 +173,9 @@ img#bio-image{
     opacity: 0.7;
 }
 
+
+
+/*----------------------------------PORTFOLIO IMAGES ------------------------------*/
 #PortfolioList{
 	text-align: center;
 }
@@ -183,6 +195,9 @@ img#bio-image{
 }
 
 
+
+
+/*------------------------------NAV---------------------------*/
 .nav{
 	float: right;
 	height: 75px;
@@ -223,6 +238,8 @@ img#bio-image{
     color: #4aaaa5;
 }
 
+
+/*------------------ FORM -----------------------*/
 input[type="text"] {
     width: 100%;
 }
