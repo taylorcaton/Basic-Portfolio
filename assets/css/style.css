@@ -100,6 +100,10 @@ a:active {
     color: blue;
 }
 
+p{
+	line-height: 18px;
+}
+
 img#bio-image{
 	float: left;
 	margin-right: 10px;
